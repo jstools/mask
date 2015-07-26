@@ -1,7 +1,7 @@
 {
   "name": "jengine-mask",
   "main": "mask.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "Jesús Germade <jesus@germade.es>"
   ],

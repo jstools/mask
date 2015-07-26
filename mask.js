@@ -124,7 +124,7 @@
     }
   }
 
-  MaskParser.prototype.eval = function (value) {
+  MaskParser.prototype.format = function (value) {
     var matches = this.match(value);
     if( !matches ) {
       throw new Error('value mismatch');
