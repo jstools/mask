@@ -1,6 +1,6 @@
 {
-  "name": "jengine-mask",
-  "version": "0.1.2",
+  "name": "jstools-mask",
+  "version": "0.1.4",
   "description": "string masks",
   "main": "mask.js",
   "scripts": {

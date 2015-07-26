@@ -7,7 +7,7 @@
     if ( root.define ) {
       root.define('$mask',factory);
     } else if ( root.angular ) {
-        root.angular.module('jengine.mask', []).constant('$mask', factory() );
+        root.angular.module('jstools.mask', []).constant('$mask', factory() );
     } else if( !root.$storage ) {
       root.$mask = factory();
     }
