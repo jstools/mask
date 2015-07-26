@@ -1,0 +1,37 @@
+{
+  "name": "jengine-mask",
+  "version": "0.1.0",
+  "description": "string masks",
+  "main": "mask.js",
+  "scripts": {
+    "test": "node run test && ./node_modules/.bin/karma start",
+    "posttest": "node run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jstools/mask.git"
+  },
+  "keywords": [
+    "mask",
+    "javascript"
+  ],
+  "author": "Jesús Germade <jesus@germade.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jstools/mask/issues"
+  },
+  "homepage": "https://github.com/jstools/mask#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "glob": "^5.0.14",
+    "jasmine-core": "^2.3.4",
+    "jshint": "^2.8.0",
+    "karma": "^0.13.3",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "karma-story-reporter": "^0.3.1",
+    "node-watch": "^0.3.4",
+    "uglify-js": "^2.4.23"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "jengine-mask",
+  "main": "mask.js",
+  "version": "0.1.0",
+  "authors": [
+    "Jesús Germade <jesus@germade.es>"
+  ],
+  "description": "string masks",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "mask"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jstools/mask",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
