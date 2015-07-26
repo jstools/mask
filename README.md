@@ -1,13 +1,13 @@
-jEngine: $mask
+jsTools: $mask
 ================
-[![Bower version](https://badge.fury.io/bo/jengine-mask.svg)](http://badge.fury.io/bo/jengine-mask)
-[![npm version](https://badge.fury.io/js/jengine-mask.svg)](http://badge.fury.io/js/jengine-mask)
+[![Bower version](https://badge.fury.io/bo/jstools-mask.svg)](http://badge.fury.io/bo/jstools-mask)
+[![npm version](https://badge.fury.io/js/jstools-mask.svg)](http://badge.fury.io/js/jstools-mask)
 Installation
 ------------
 ```.sh
-npm install jengine-mask --save
+npm install jstools-mask --save
 ```
   or
 ```.sh
-bower install jengine-mask --save
+bower install jstools-mask --save
 ```
