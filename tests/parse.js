@@ -3,6 +3,7 @@ describe('$mask parse', function () {
 
   var carEnrolmentMask = '{9999} {aaa}',
       phoneMask = '({999}) {99} {99} {99}',
+      phoneMaskES = '(+34) {999} {99} {99} {99}',
       pristine = {};
 
   describe('parse ' + carEnrolmentMask, function () {
@@ -71,6 +72,36 @@ describe('$mask parse', function () {
       } catch(err) {}
 
       expect( value ).toBe( pristine );
+    });
+
+  });
+
+  describe('parse ' + phoneMaskES, function () {
+
+    var mask = $mask(phoneMaskES);
+
+    it('parse regexp', function () {
+      expect( mask.reParse.toString() ).toBe('/^\\(\\+34\\)\\s(\\d)(\\d)(\\d)\\s(\\d)(\\d)\\s(\\d)(\\d)\\s(\\d)(\\d)$/');
+    });
+
+    it('parse regexp partial', function () {
+      expect( mask.reParsePartial.toString() ).toBe('/^\\((\\+(3(4(\\)(\\s((\\d)((\\d)((\\d)(\\s((\\d)((\\d)(\\s((\\d)((\\d)(\\s((\\d)((\\d))?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?)?$/');
+    });
+
+    it('parse (+34)', function () {
+      expect( mask.parse('(+34)') ).toBe('');
+    });
+
+    it('parse (+34) 654', function () {
+      expect( mask.parse('(+34) 654') ).toBe('654');
+    });
+
+    it('parse (+34) 654 98 7', function () {
+      expect( mask.parse('(+34) 654 98 7') ).toBe('654987');
+    });
+
+    it('parse (+34) 654 98 73 21', function () {
+      expect( mask.parse('(+34) 654 98 73 21') ).toBe('654987321');
     });
 
   });

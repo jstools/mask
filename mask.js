@@ -77,7 +77,7 @@
     return str.split('').map(getMatchSymbol);
   }
 
-  var escapeChars = ['(', ')', '[', ']', '{', '}', ];
+  var escapeChars = ['(', ')', '[', ']', '{', '}', '.', '+', '<', '>', '+', '-'];
   escapeChars.map = {};
   escapeChars.forEach(function (char) { escapeChars.map[char] = true; });
 
