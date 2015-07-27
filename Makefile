@@ -1,4 +1,4 @@
-# --- aplazame-js
+# --- jstools-mask
 
 build: test
 	@node run build
