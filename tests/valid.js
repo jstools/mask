@@ -1,8 +1,8 @@
 
 describe('$mask valid', function () {
 
-  var carEnrolmentMask = '{9999} {aaa}',
-      phoneMask = '({999}) {99} {99} {99}';
+  var carEnrolmentMask = '{{9999}} {{aaa}}',
+      phoneMask = '({{999}}) {{99}} {{99}} {{99}}';
 
   describe('valid ' + carEnrolmentMask, function () {
 

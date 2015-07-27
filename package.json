@@ -1,6 +1,6 @@
 {
   "name": "jstools-mask",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "string masks",
   "main": "mask.js",
   "scripts": {

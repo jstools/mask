@@ -1,9 +1,9 @@
 
 describe('$mask parse', function () {
 
-  var carEnrolmentMask = '{9999} {aaa}',
-      phoneMask = '({999}) {99} {99} {99}',
-      phoneMaskES = '(+34) {999} {99} {99} {99}',
+  var carEnrolmentMask = '{{9999}} {{aaa}}',
+      phoneMask = '({{999}}) {{99}} {{99}} {{99}}',
+      phoneMaskES = '(+34) {{999}} {{99}} {{99}} {{99}}',
       pristine = {};
 
   describe('parse ' + carEnrolmentMask, function () {

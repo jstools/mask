@@ -1,8 +1,8 @@
 
 describe('$mask format', function () {
 
-  var carEnrolmentMask = '{9999} {aaa}',
-      phoneMask = '({999}) {99} {99} {99}';
+  var carEnrolmentMask = '{{9999}} {{aaa}}',
+      phoneMask = '({{999}}) {{99}} {{99}} {{99}}';
 
   it('should be defined', function () {
     expect($mask).toBeDefined();

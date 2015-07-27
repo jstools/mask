@@ -1,8 +1,8 @@
 
 describe('$mask match', function () {
 
-  var carEnrolmentMask = '{9999} {aaa}',
-      phoneMask = '({999}) {99} {99} {99}';
+  var carEnrolmentMask = '{{9999}} {{aaa}}',
+      phoneMask = '({{999}}) {{99}} {{99}} {{99}}';
 
   it('should be defined', function () {
     expect($mask).toBeDefined();
@@ -12,6 +12,10 @@ describe('$mask match', function () {
   describe('match ' + carEnrolmentMask, function () {
 
     var mask = $mask(carEnrolmentMask);
+
+    it('match mask', function () {
+      expect( mask.mask ).toBe(carEnrolmentMask);
+    });
 
     it('match regexp', function () {
       expect( mask.reMatch.toString() ).toBe('/^(\\d)(\\d)?(\\d)?(\\d)?([a-z])?([a-z])?([a-z])?$/');
@@ -30,6 +34,10 @@ describe('$mask match', function () {
   describe('match ' + phoneMask, function () {
 
     var mask = $mask(phoneMask);
+
+    it('match mask', function () {
+      expect( mask.mask ).toBe(phoneMask);
+    });
 
     it('match regexp', function () {
       expect( mask.reMatch.toString() ).toBe('/^(\\d)(\\d)?(\\d)?(\\d)?(\\d)?(\\d)?(\\d)?(\\d)?(\\d)?$/');

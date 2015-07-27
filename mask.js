@@ -104,12 +104,14 @@
 
   function MaskParser (mask) {
 
-    var plain = mask.split(/\{[^\}]+\}/),
-        wilds = mask.match(/\{([^\}]+)\}/g);
+    this.mask = mask;
+
+    var plain = mask.split(/\{\{[^\}]+\}\}/),
+        wilds = mask.match(/\{\{([^\}]+)\}\}/g);
 
     if( wilds ) {
       wilds = wilds.map(function (value) {
-        return value.substr(1, value.length - 2);
+        return value.substr(2, value.length - 4);
       });
 
       this.reMatch = new RegExp('^' + wilds.join('').split('').reduce(reduceMatch, '') + '$');
