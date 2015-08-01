@@ -4,6 +4,7 @@
   "description": "string masks",
   "main": "mask.js",
   "scripts": {
+    "pretest": "node run build",
     "test": "node run test && ./node_modules/.bin/karma start",
     "posttest": "node run build"
   },
