@@ -9,7 +9,7 @@ describe('$mask valid', function () {
     var mask = $mask(carEnrolmentMask);
 
     it('valid regexp', function () {
-      expect( mask.reValid.toString() ).toBe('/^\\d\\d\\d\\d[a-z][a-z][a-z]$/');
+      expect( mask.reValid.toString() ).toBe('/^\\d\\d\\d\\d[a-zA-Z][a-zA-Z][a-zA-Z]$/');
     });
 
     it('1324abc should be valid', function () {

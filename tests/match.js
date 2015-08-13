@@ -18,7 +18,7 @@ describe('$mask match', function () {
     });
 
     it('match regexp', function () {
-      expect( mask.reMatch.toString() ).toBe('/^(\\d)(\\d)?(\\d)?(\\d)?([a-z])?([a-z])?([a-z])?$/');
+      expect( mask.reMatch.toString() ).toBe('/^(\\d)(\\d)?(\\d)?(\\d)?([a-zA-Z])?([a-zA-Z])?([a-zA-Z])?$/');
     });
 
     it('match 1324abc should succeed', function () {

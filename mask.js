@@ -42,9 +42,9 @@
 
   var RE_LETTER = {
     '9': '\\d',
-    'a': '[a-z]',
-    'A': '[A-Z]',
-    'â': '[a-zA-Z]'
+    'a': '[a-zA-Z]',
+    'U': '[A-Z]',
+    'l': '[a-z]'
   };
 
   function getMatchSymbol (symbol) {

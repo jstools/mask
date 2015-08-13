@@ -11,11 +11,11 @@ describe('$mask parse', function () {
     var mask = $mask(carEnrolmentMask);
 
     it('parse regexp', function () {
-      expect( mask.reParse.toString() ).toBe('/^(\\d)(\\d)(\\d)(\\d)\\s([a-z])([a-z])([a-z])$/');
+      expect( mask.reParse.toString() ).toBe('/^(\\d)(\\d)(\\d)(\\d)\\s([a-zA-Z])([a-zA-Z])([a-zA-Z])$/');
     });
 
     it('parse regexp partial', function () {
-      expect( mask.reParsePartial.toString() ).toBe('/^(\\d)((\\d)((\\d)((\\d)(\\s(([a-z])(([a-z])(([a-z]))?)?)?)?)?)?)?$/');
+      expect( mask.reParsePartial.toString() ).toBe('/^(\\d)((\\d)((\\d)((\\d)(\\s(([a-zA-Z])(([a-zA-Z])(([a-zA-Z]))?)?)?)?)?)?)?$/');
     });
 
     it('parse 1234 abc', function () {
