@@ -1,7 +1,9 @@
-jsTools: $mask
+jsTools: $mask (!Deprecated)
 ================
-[![Bower version](https://badge.fury.io/bo/jstools-mask.svg)](http://badge.fury.io/bo/jstools-mask)
-[![npm version](https://badge.fury.io/js/jstools-mask.svg)](http://badge.fury.io/js/jstools-mask)
+![stability-deprecated](https://img.shields.io/badge/stability-deprecated-red.svg)
+
+Better alternative: https://github.com/kiltjs/input-mask
+
 Installation
 ------------
 ```.sh
